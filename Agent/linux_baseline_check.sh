@@ -1188,4 +1188,4 @@ echo $vuln_scan_result
 #echo $vuln_scan_result|jq
 check_result={\"os_scan_result\":$os_scan_result,\"middleware_check_result\":$middleware_check_result,\"vuln_scan_result\":$vuln_scan_result}
 echo "==========================Upload Check Result======================"
-curl -X POST "http://192.168.3.111:8000/baseline/linux_scan_res_report/" -H "accept:application/json" -H "content-type:application/json" -d "$check_result" 1>/dev/null 2>/dev/null
+curl -X POST "http://10.116.23.28:8000/baseline/linux_scan_res_report/" -H "accept:application/json" -H "content-type:application/json" -d "$check_result" 1>/dev/null 2>/dev/null
